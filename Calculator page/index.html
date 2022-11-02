@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <section class="title">
+        <h1>Calculator</h1>
+    </section>
+    <div class="calculadora">
+        <div class="contenido">
+            <div class="resultado" id="resultado" ></div>
+        </div>
+        <div class="botones">
+            <div class="numeros">
+                <div class="signos">
+                    <button id="mas" onclick="input(this,true)" value="+">+</button>
+                    <button id="multiplicar" onclick="input(this, true)" value="x">x</button>
+                    <button id="resta" onclick="input(this, true)" value="-" >-</button>
+                    <button id="elim" onclick="elim()">←</button>
+                </div>
+                <div class="signos2">
+                    <button id="raiz"onclick="raiz(this)" value="√(" class="raiz">√</button>
+                    <button id="dividir"onclick="input(this, true)" value="/" >÷</button>
+                    <button id="igual" onclick="equal()" class="igual">=</button>
+                </div>
+                <div>
+                    <button id="n7" value= 7 onclick="input(this)">7</button>
+                    <button id="n8" value= 8 onclick="input(this)">8</button>
+                    <button id="n9" value= 9 onclick="input(this)">9</button>
+                </div>
+                <div>
+                    <button id="n4" value= 4 onclick="input(this)">4</button>
+                    <button id="n5" value= 5 onclick="input(this)">5</button>
+                    <button id="n6" value= 6 onclick="input(this)">6</button>
+                </div>
+                <div>
+                    <button id="n1" value= 1 onclick="input(this)">1</button>
+                    <button id="n2" value= 2 onclick="input(this)">2</button>
+                    <button id="n3" value= 3 onclick="input(this)">3</button>
+                </div>
+                <div class="elimt2">
+                    <button id="n0" value= 0 onclick="input(this)">0</button>
+                    <button id="pd" onclick="input(this)" value="(" class="pd">(</button>
+                    <button id="pi" onclick="input(this)" value=")" class="pi">)</button>
+                </div>
+                <div class="signos3">
+                    <button id="punto" value ="." onclick="input(this)" class="punto">.</button>
+                    <button id="elimt" onclick="elimt()" class="elimt">CE</button>
+                </div>
+            </div>
+            </div>
+    </div> 
+</body>
+<script src="Calculator.js"></script>
+</html>
